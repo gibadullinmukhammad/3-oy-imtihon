@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Tailwind CSS</title>
+  </head>
+  <body class="bg-[#0F041C]">
+    <header>
+      <nav>
+        <div class="container">
+          <div class="wrapper flex justify-between items-center mt-[20px]">
+            <ul class="hidden gap-[32px] desktop:flex">
+              <li class="list-none">
+                <a href=""
+                  ><span class="nav__list__item text-[#FFFFFFCC]">Home</span></a
+                >
+              </li>
+
+              <li class="list-none">
+                <a href=""
+                  ><span class="nav__list__item text-[#FFFFFFCC]"
+                    >Catalog</span
+                  ></a
+                >
+              </li>
+
+              <li class="list-none">
+                <a href=""
+                  ><span class="nav__list__item text-[#FFFFFFCC]"
+                    >Contact</span
+                  ></a
+                >
+              </li>
+
+              <li class="list-none">
+                <a href=""
+                  ><span class="nav__list__item text-[#FFFFFFCC]"
+                    >Features</span
+                  ></a
+                >
+              </li>
+
+              <li class="list-none">
+                <a href=""
+                  ><span class="nav__list__item text-[#FFFFFFCC]"
+                    >Contact</span
+                  ></a
+                >
+              </li>
+            </ul>
+
+            <ul class="flex flex-col gap-[6px] tablet:hidden">
+              <li class="w-8 h-[4px] bg-white rounded-[10px]"></li>
+              <li class="w-8 h-[4px] bg-white rounded-[10px]"></li>
+              <li class="w-8 h-[4px] bg-white rounded-[10px]"></li>
+            </ul>
+
+            <img class="" src="./images/nav-logo (5).svg" alt="" />
+
+            <div
+              class="w-[336px] h-[46px] bg-[#1D112A] rounded-[6px] hidden desktop:flex"
+            >
+              <input
+                class="mt-[10px] ml-[24px] mb-[10px] rounded-none bg-[#1D112A] w-[200px] outline-none text-[#FFFf]"
+                placeholder=" games & products.."
+                type="text"
+                name=""
+                id=""
+              />
+              <img
+                class="w-[22px] h-[22px] mt-[10px] ml-[70px]"
+                src="./images/Search.svg"
+                alt=""
+              />
+            </div>
+
+            <div class="flex gap-[24px]">
+              <img
+                class="block desktop:hidden"
+                src="./images/Search.svg"
+                alt=""
+              />
+              <img src="./images/nav-logo (6).svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="wrapper tablet:flex desktop:mt-[88px]">
+            <div class="text tablet:w-[50%]">
+              <p class="text-[#FFFFFFCC] font-medium text-sm mt-[35px]">
+                Virtual Headsets
+              </p>
+
+              <div class="w-[150px] h-[1px] bg-[#412384] mt-[12px]"></div>
+
+              <h1 class="text-[#FFFFFF] font-bold text-5xl mt-[23px]">
+                Experience a <br />new dimension <br />
+                of reality
+              </h1>
+
+              <div class="flex gap-[12px] mt-[33px]">
+                <img src="./images/hero-logo (2).svg" alt="" />
+                <p class="text-[#FFFFFFCC] mt-[20px]">
+                  Step into the future with our virtual headset, <br />
+                  come to life right before your eyes
+                </p>
+              </div>
+
+              <div
+                class="flex items-center flex-col tablet:flex tablet:flex-row tablet:gap-[30px]"
+              >
+                <button
+                  class="bttn bg-[#3DDEED] flex gap-[24px] rounded py-[16px] px-[70px] mt-[24px] desktop:py-[16px] desktop:px-[40px]"
+                >
+                  <span class="text-center text-[#182627 ]">VisitSttore</span>
+
+                  <img class="mt-[6px]" src="./images/btn-logo.svg" alt="" />
+                </button>
+
+                <button
+                  class="bttn bg-[#18102c] flex gap-[24px] rounded py-[16px] px-[70px] mt-[24px] desktop:py-[16px] desktop:px-[60px]"
+                >
+                  <img class="mt-[4px]" src="./images/explore.svg" alt="" />
+
+                  <span class="text-center text-[#FFFF]">Exploreee</span>
+                </button>
+              </div>
+
+              <h3 class="text-[#FFFFFF] mt-[36px]">FOLLOW US</h3>
+
+              <div class="flex gap-[30px] mt-[12px] desktop:mt-[30px]">
+                <img src="./images/twitter.svg" alt="" />
+                <img src="./images/instagram.svg" alt="" />
+                <img src="./images/ic_round-discord.svg" alt="" />
+                <img src="./images/facebook.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="tablet:w-[50%]">
+              <img
+                class="mt-[-330px] absolute desktop:mt-[40px]"
+                src="./images/hero image 1.png"
+                alt=""
+              />
+
+              <img
+                class="relative ml-[-200px] mt-[30px] hidden tablet:block"
+                src="./images/hero-imgg.png"
+                alt=""
+              />
+              <img
+                class="relative ml-[520px] mt-[-60px] hidden tablet:block"
+                src="./images/hero-img2.png"
+                alt=""
+              />
+
+              <hr
+                class="border-0 h-1 bg-gradient-to-r from-[#BD00FF00] via-[#BD00FF4D] to-[#BD00FF4D] mt-[360px]"
+              />
+            </div>
+          </div>
+
+          <div
+            class="flex-col gap-[57px] justify-end mt-[60px] desktop:flex desktop:flex-row desktop:mt-[34px]"
+          >
+            <div class="flex gap-[24px] mt-[22px]">
+              <img
+                class="w-[30px] h-[32px]"
+                src="./images/hero-img4.svg"
+                alt=""
+              />
+              <p class="text-[#FFFFFF99] text-xl font-medium">
+                EnhancedEducation
+              </p>
+            </div>
+
+            <div class="flex gap-[24px] mt-[22px]">
+              <img src="./images/fluent_sport-20-filled.svg" alt="" />
+              <p class="text-[#FFFFFF99] text-xl font-medium">
+                Training and Simulation
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div
+            class="wrapper desktop:flex desktop:flex-row-reverse desktop:gap-[100px]"
+          >
+            <div class="wrapper__text desktop:mt-[170px]">
+              <h3
+                class="text-[#fff] text-2xl font-bold mt-[32px] desktop:font-bold desktop:text-5xl"
+              >
+                Our Virtual Headsets <br class="hidden desktop:block" />Shine
+                with Unique Features!
+              </h3>
+
+              <div class="flex gap-[12px] mt-[24px] desktop:hidden">
+                <img src="./images/Star 5.svg" alt="" />
+                <p class="text-[#fff] mt-[8px] font-medium text-sm">
+                  High-resolution OLED or LCD screens: Provide sharp and clear
+                  visuals.
+                </p>
+              </div>
+
+              <div class="flex gap-[12px] mt-[16px] desktop:hidden">
+                <img src="./images/Star 5.svg" alt="" />
+                <p class="text-[#fff] mt-[8px] font-medium text-sm">
+                  High-resolution OLED or LCD screens: Provide sharp and clear
+                  visuals.
+                </p>
+              </div>
+
+              <div class="flex gap-[12px] mt-[16px] desktop:hidden">
+                <img src="./images/Star 5.svg" alt="" />
+                <p class="text-[#fff] mt-[8px] font-medium text-sm">
+                  High-resolution OLED or LCD screens: Provide sharp and clear
+                  visuals.
+                </p>
+              </div>
+
+              <!-- .................... -->
+
+              <div class="desktop:flex">
+                <div class="hidden desktop:flex gap-[12px] mt-[16px]">
+                  <img src="./images/Star 5.svg" alt="" />
+                  <p class="text-[#fff] mt-[8px] font-medium text-sm">
+                    High-resolution OLED or LCD screens: Provide sharp and clear
+                    visuals.
+                  </p>
+                </div>
+
+                <div class="hidden desktop:flex gap-[12px] mt-[16px]">
+                  <img src="./images/Star 5.svg" alt="" />
+                  <p class="text-[#fff] mt-[8px] font-medium text-sm">
+                    High-resolution OLED or LCD screens: Provide sharp and clear
+                    visuals.
+                  </p>
+                </div>
+              </div>
+
+              <div class="desktop:flex">
+                <div class="hidden desktop:flex gap-[12px] mt-[16px]">
+                  <img src="./images/Star 5.svg" alt="" />
+                  <p class="text-[#fff] mt-[8px] font-medium text-sm">
+                    High-resolution OLED or LCD screens: Provide sharp and clear
+                    visuals.
+                  </p>
+                </div>
+
+                <div class="hidden desktop:flex gap-[12px] mt-[16px]">
+                  <img src="./images/Star 5.svg" alt="" />
+                  <p class="text-[#fff] mt-[8px] font-medium text-sm">
+                    High-resolution OLED or LCD screens: Provide sharp and clear
+                    visuals.
+                  </p>
+                </div>
+              </div>
+
+              <div class="desktop:flex">
+                <div class="hidden desktop:flex gap-[12px] mt-[16px]">
+                  <img src="./images/Star 5.svg" alt="" />
+                  <p class="text-[#fff] mt-[8px] font-medium text-sm">
+                    High-resolution OLED or LCD screens: Provide sharp and clear
+                    visuals.
+                  </p>
+                </div>
+
+                <div class="hidden desktop:flex gap-[12px] mt-[16px]">
+                  <img src="./images/Star 5.svg" alt="" />
+                  <p class="text-[#fff] mt-[8px] font-medium text-sm">
+                    High-resolution OLED or LCD screens: Provide sharp and clear
+                    visuals.
+                  </p>
+                </div>
+              </div>
+
+              <!-- .................... -->
+            </div>
+
+            <div class="flex justify-center tablet:hidden">
+              <img
+                class="absolute mt-[40px]"
+                src="./images/apple-img.png"
+                alt=""
+              />
+              <img
+                class="relative top-[70px]"
+                src="./images/apple-logo.png"
+                alt=""
+              />
+            </div>
+
+            <div class="hidden desktop:block mt-[150px]">
+              <img
+                class="absolute w-[500px] h-[486px] ml-[-50px]"
+                src="./images/apple-img.png"
+                alt=""
+              />
+              <img
+                class="relative ml-[-100px] mt-[120px]"
+                src="./images/Ellipse 1200.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+
+        <div class="container">
+
+       
+
+        <div class="wrapper desktop:flex gap-[150px] mt-[160px]">
+
+          <div class="mt-[100px] text-center">
+            <h2 class="text-[#ffff] font-bold	text-2xl	desktop:font-bold desktop:text-3xl	">Jane Wilson, Gaming Creator</h2>
+            <p class="text-[#fff] text-sm	font-normal	mt-[24px] desktop:text-left">
+              A virtual headset creator is an individual or company <br> that
+              specializes in designing and manufacturing virtual <br> reality
+              headsets, also known as VR headsets.
+            </p>
+
+            
+            <button class="bttn bg-[#3DDEED1A] flex gap-[24px] rounded py-[16px] px-[30px] mt-[24px] ml-[24px] desktop:ml-[0] ">
+
+            <span class="text-center text-[#3DDEED]">Read my blog</span>
+
+            <img class="mt-[6px]" src="./images/arrow_forward.svg" alt="" />
+
+           </button>
+
+           <div class="gap-[240px] flex justify-between">
+            <div class="py-10 flex relative">
+              <img src="./images/z-index-1.svg" alt="" />
+              <img
+                class="absolute left-[30px]"
+                src="./images/z-index2.svg"
+                alt=""
+              />
+              <img
+                class="absolute left-[60px]"
+                src="./images/z-index-3.svg"
+                alt=""
+              />
+              <img
+                class="absolute left-[100px]"
+                src="./images/z-index-4.svg"
+                alt=""
+              />
+              <img
+                class="absolute left-[130px]"
+                src="./images/z-index-5.svg"
+                alt=""
+              />
+              <div class="items-end">
+                <p class="ml-[140px] mt-[10px] text-[#FFF]">+258KViews</p>
+              </div>
+            </div>
+          </div>
+
+          </div>
+
+       
+          <div >
+              <img class="absolute " src="./images/jane-img.png" alt="">
+
+             
+
+                <div class="relative  top-[200px]  bg-white pt-[14px] pl-[20px] rounded-[8px] desktop:top-[330px] desktop:ml-[-60px]">
+                  
+                  <div class="flex gap-[6px]">
+                  <img src="./images/jane-logo.svg" alt="">
+                  <h3 class="text-[#000000] font-semibold	">Jane Wilson <br>
+                    @jjwilson</h3>
+                  </div>
+
+                    <p class="text-[#141619] font-light	text-xl	mt-[32px]">Virtual headsets of the future isss live</p>
+                    <div class="flex">
+                    <p class="mt-[28px]">09:28 · 2/21/20 ·</p> <p class="text-[#7d8fea] pt-[28px]">Twitter Web App</p>
+                  </div>
+                    <hr class="mt-[15px]">
+                    <p class="mt-[13px]"> 24,5k Retweets 104,21k Likes</p> 
+                    <hr class="mt-[12px]">
+
+                    <div class="flex gap-[50px] justify-center mt-[13px] pb-[20px]" >
+                      <img src="./images/icon-z.svg" alt="">
+                      <img src="./images/icon-z.svg" alt="">
+                      <img src="./images/icon-z.svg" alt="">
+                      <img src="./images/icon-z.svg" alt="">
+                    </div>
+
+              </div>
+
+          </div>
+         
+
+        </div>
+      </div>
+      </section>
+
+
+     <section class="desktop:mt-[200px] mt-[200px]">
+
+      <div class="container desktop:flex  desktop:gap-[12px] desktop:justify-between desktop:pt-[200px]" >
+        <div>
+        <h3 class=" text-[#ffff] font-bold	text-2xl	 desktop:text-6xl	desktop:font-bold">Top Games</h3>
+       </div>
+       <div>
+        <p class="text-[#ffff] mt-[24px]">If you buy video 2 games, you will receive 1 <br>video game for free, along with a 50% discount.</p>
+      </div>
+
+        <div class=" gap-[16px] hidden desktop:flex">
+          <img src="./images/Frame 23.svg" alt="">
+          <img src="./images/Frame 22.svg" alt="">
+        </div>
+
+      </div>
+
+      <div class="card__carusel mt-[48px]">
+        <div
+          class="wrapper overflow-x-scroll flex overflow-y-visible w-full gap-[32px]"
+        >
+          <div class="card">
+            <div class="relative">
+              <img src="./images/Group 302 (1).png" alt="" />
+            
+            </div>
+          
+          </div>
+          <div class="card">
+            <div class="relative">
+              <img class=" border border-[#0F041C] hover:border-purple-500 transition duration-1000" src="./images/Group 303.png" alt="" />
+            
+            </div>
+        
+          </div>
+          <div class="card">
+            <div class="relative">
+              <img src="./images/Group 304.png" alt="" />
+           
+            </div>
+           
+          </div>
+          <div class="card">
+            <div class="relative">
+              <img src="./images/Group 304.png" alt="" />
+            
+            </div>
+           
+          </div>
+          <div class="card">
+            <div class="relative">
+              <img src="./images/Group 304.png" alt="" />
+             
+            </div>
+
+            
+          </div>
+        
+        </div>
+      </div>
+     </section>
+
+     <section>
+
+      <div class="container">
+
+        <h2 class="font-bold text-2xl	text-center text-[#FFFFFF] mt-[28px] desktop:text-6xl	desktop:mt-[132px]">F.A.Q.</h2>
+
+        <div class="flex justify-center py-6 desktop:mt-[52px]">
+          <div class="group w-full max-w-full desktop:max-w-[928px]">
+
+            <div
+              class="flex items-center h-[75px] desktop:h-[95px] rounded-[8px] bg-[#FFFFFF0D] py-6 desktop:py-10 px-4 desktop:px-8 cursor-pointer group-hover:rounded-b-none"
+            >
+              <h2
+                class="text-[18px] desktop:text-[24px] font-bold leading-[22px] desktop:leading-[31.2px] tracking-[-0.02em] text-left text-[#FFFFFF]"
+              >
+                What are the different types of virtual headsets available?
+              </h2>
+              <img
+                class="w-[16px] desktop:w-[20px] h-[16px] desktop:h-[20px] cursor-pointer desktop:ml-[200px]"
+                src="./images/arrow_forward (1).svg"
+                alt=""
+              />
+            </div>
+  
+            <div
+              class="max-h-0 overflow-hidden opacity-0 transform group-hover:max-h-[700px] group-hover:opacity-50 group-hover:scale-y-100 transition-all duration-700 ease-in-out desktop:mt-[24px]"
+            >
+              <div
+                class="w-full rounded-b-[8px] bg-[#FFFFFF0D] px-4 desktop:px-8 py-4 desktop:py-6"
+              >
+                <div
+                  class="flex justify-between items-center h-[75px] desktop:h-[95px] rounded-t-[8px] py-6 desktop:py-10 px-4 desktop:px-8 cursor-pointer group-hover:rounded-b-none transition duration-300 ease-in-out"
+                >
+                  <h2
+                    class="text-[18px] desktop:text-[24px] font-bold leading-[22px]  text-left text-[#FFFFFF]"
+                  >
+                    How does a virtual headset work?
+                  </h2>
+                  <img
+                    class="w-[16px] desktop:w-[20px] h-[16px] desktop:h-[20px]"
+                    src="./images/pink-logo.svg"
+                    alt=""
+                  />
+                </div>
+  
+                <p
+                  class="text-[14px] desktop:text-[18px] font-normal leading-[20px] desktop:leading-[27px] text-left text-[#FFFFFF]"
+                >
+                  Virtual headsets are equipped with various sensors to track the
+                  user's movements. These sensors can include accelerometers,
+                  gyroscopes, and sometimes external cameras or base stations.
+                  They constantly monitor the position and orientation of the
+                  headset and sometimes the user's hand controllers.
+                </p>
+                <p
+                  class="text-[14px] desktop:text-[18px] font-normal leading-[20px] lg:leading-[27px] text-left text-[#FFFFFF] py-4 desktop:py-7"
+                >
+                  The headset has one or two high-resolution displays, one for
+                  each eye, positioned in front of the user's eyes. These displays
+                  show stereoscopic 3D images, creating a sense of depth and
+                  immersion. Between the displays and the user's eyes, help focus
+                  the images and adjust them for the user's field of view.
+                </p>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+            <div
+              class="flex items-center h-[75px] desktop:h-[95px] rounded-[8px] bg-[#FFFFFF0D] py-6 desktop:py-10 px-4 desktop:px-8 cursor-pointer group-hover:rounded-b-none"
+            >
+              <h2
+                class="text-[18px] desktop:text-[24px] font-bold leading-[22px] desktop:leading-[31.2px] tracking-[-0.02em] text-left text-[#FFFFFF]"
+              >
+              Do I need a powerful computer to use a virtual headset?
+              </h2>
+              <img
+                class="w-[16px] desktop:w-[20px] h-[16px] desktop:h-[20px] cursor-pointer desktop:ml-[215px]"
+                src="./images/arrow_forward (1).svg"
+                alt=""
+              />
+            </div>
+  
+            <div
+              class="max-h-0 overflow-hidden opacity-0 transform group-hover:max-h-[700px] group-hover:opacity-50 group-hover:scale-y-100 transition-all duration-700 ease-in-out desktop:mt-[24px]"
+            >
+              <div
+                class="w-full rounded-b-[8px] bg-[#FFFFFF0D] px-4 desktop:px-8 py-4 desktop:py-6"
+              >
+                <div
+                  class="flex justify-between items-center h-[75px] desktop:h-[95px] rounded-t-[8px] py-6 desktop:py-10 px-4 desktop:px-8 cursor-pointer group-hover:rounded-b-none transition duration-300 ease-in-out"
+                >
+                  <h2
+                    class="text-[18px] desktop:text-[24px] font-bold leading-[22px]  text-left text-[#FFFFFF]"
+                  >
+                    How does a virtual headset work?
+                  </h2>
+                  <img
+                    class="w-[16px] desktop:w-[20px] h-[16px] desktop:h-[20px]"
+                    src="./images/pink-logo.svg"
+                    alt=""
+                  />
+                </div>
+  
+                <p
+                  class="text-[14px] desktop:text-[18px] font-normal leading-[20px] desktop:leading-[27px] text-left text-[#FFFFFF]"
+                >
+                  Virtual headsets are equipped with various sensors to track the
+                  user's movements. These sensors can include accelerometers,
+                  gyroscopes, and sometimes external cameras or base stations.
+                  They constantly monitor the position and orientation of the
+                  headset and sometimes the user's hand controllers.
+                </p>
+                <p
+                  class="text-[14px] desktop:text-[18px] font-normal leading-[20px] lg:leading-[27px] text-left text-[#FFFFFF] py-4 desktop:py-7"
+                >
+                  The headset has one or two high-resolution displays, one for
+                  each eye, positioned in front of the user's eyes. These displays
+                  show stereoscopic 3D images, creating a sense of depth and
+                  immersion. Between the displays and the user's eyes, help focus
+                  the images and adjust them for the user's field of view.
+                </p>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+            <div
+            class="flex items-center h-[75px] desktop:h-[95px] rounded-[8px] bg-[#FFFFFF0D] py-6 desktop:py-10 px-4 desktop:px-8 cursor-pointer group-hover:rounded-b-none"
+          >
+            <h2
+              class="text-[18px] desktop:text-[24px] font-bold leading-[22px] desktop:leading-[31.2px] tracking-[-0.02em] text-left text-[#FFFFFF]"
+            >
+            What are the main applications of virtual headsets?
+            </h2>
+            <img
+              class="w-[16px] desktop:w-[20px] h-[16px] desktop:h-[20px] cursor-pointer desktop:ml-[270px]"
+              src="./images/arrow_forward (1).svg"
+              alt=""
+            />
+          </div>
+
+
+
+
+
+
+
+
+
+          
+
+          <div
+            class="max-h-0 overflow-hidden opacity-0 transform group-hover:max-h-[700px] group-hover:opacity-50 group-hover:scale-y-100 transition-all duration-700 ease-in-out desktop:mt-[24px]"
+          >
+            <div
+              class="w-full rounded-b-[8px] bg-[#FFFFFF0D] px-4 desktop:px-8 py-4 desktop:py-6"
+            >
+              <div
+                class="flex justify-between items-center h-[75px] desktop:h-[95px] rounded-t-[8px] py-6 desktop:py-10 px-4 desktop:px-8 cursor-pointer group-hover:rounded-b-none transition duration-300 ease-in-out"
+              >
+                <h2
+                  class="text-[18px] desktop:text-[24px] font-bold leading-[22px]  text-left text-[#FFFFFF]"
+                >
+                  How does a virtual headset work?
+                </h2>
+                <img
+                  class="w-[16px] desktop:w-[20px] h-[16px] desktop:h-[20px]"
+                  src="./images/pink-logo.svg"
+                  alt=""
+                />
+              </div>
+
+              <p
+                class="text-[14px] desktop:text-[18px] font-normal leading-[20px] desktop:leading-[27px] text-left text-[#FFFFFF]"
+              >
+                Virtual headsets are equipped with various sensors to track the
+                user's movements. These sensors can include accelerometers,
+                gyroscopes, and sometimes external cameras or base stations.
+                They constantly monitor the position and orientation of the
+                headset and sometimes the user's hand controllers.
+              </p>
+              <p
+                class="text-[14px] desktop:text-[18px] font-normal leading-[20px] lg:leading-[27px] text-left text-[#FFFFFF] py-4 desktop:py-7"
+              >
+                The headset has one or two high-resolution displays, one for
+                each eye, positioned in front of the user's eyes. These displays
+                show stereoscopic 3D images, creating a sense of depth and
+                immersion. Between the displays and the user's eyes, help focus
+                the images and adjust them for the user's field of view.
+              </p>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+         
+
+            
+          </div>
+        </div>
+      </div>
+
+     </section>
+
+    </main>
+
+
+    <footer class="bg-[#FFFFFF0D] mt-[132px] ">
+
+        <div class="container wrapper flex flex-col desktop:flex desktop:gap-[218px] desktop:flex-row">
+
+          <div class="mt-[80px]">
+
+            <img src="./images/Group 289.svg" alt="">
+
+            <div class="flex gap-[24px] mt-[30px]">
+
+              <img src="./images/twitter.svg" alt="">
+              <img src="./images/instagram.svg" alt="">
+              <img src="./images/ic_round-discord.svg" alt="">
+              <img src="./images/facebook.svg" alt="">
+
+            </div>
+
+           <p class="font-normal text-[#FFFFFFCC] mt-[24px]"> (+994) 199-28-786 </p>
+
+          </div>
+
+
+          <div class="flex gap-[60px] desktop:flex desktop:gap-[234px]">
+
+          <div class="mt-[80px]">
+
+            <ul class="flex flex-col gap-[24px]">
+
+              <li class="">
+                <a href=""><span class="text-[#FFFFFF]  ">Menu</span></a>
+              </li>
+
+              <li class="">
+                <a href=""><span class="text-[#FFFFFFCC]  nav__list__item">Home</span></a>
+              </li>
+
+              <li class="">
+                <a href=""><span class="text-[#FFFFFFCC]  nav__list__item">Catalog </span></a>
+              </li>
+
+              <li class="">
+                <a href=""><span class="text-[#FFFFFFCC] nav__list__item ">Features</span></a>
+              </li>
+
+              <li class="">
+                <a href=""><span class="text-[#FFFFFFCC] nav__list__item ">Contact</span></a>
+              </li>
+
+            </ul>
+
+          </div>
+
+
+
+          <div class="mt-[80px]">
+
+            <ul class="flex flex-col gap-[24px]">
+
+              <li class="">
+                <a href=""><span class="text-[#FFFFFF]  ">Company</span></a>
+              </li>
+
+              <li class="">
+                <a href=""><span class="text-[#FFFFFFCC]  nav__list__item">Login</span></a>
+              </li>
+
+              <li class="">
+                <a href=""><span class="text-[#FFFFFFCC]  nav__list__item">Sign Up </span></a>
+              </li>
+
+              <li class="">
+                <a href=""><span class="text-[#FFFFFFCC] nav__list__item ">Privacy</span></a>
+              </li>
+
+              <li class="">
+                <a href=""><span class="text-[#FFFFFFCC] nav__list__item ">Products</span></a>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+            <div class="mt-[80px] ">
+
+              <h3 class="text-[#FFFf] font-bold text-lg	">Subscribe Our News Letter</h3>
+              <p class="text-[#FFFFFFCC] mt-[24px]">Sure, please provide your email address to subscribe to <br>newsletter</p>
+
+
+              <div class="desktop:flex desktop:flex-row desktop:gap-[0] desktop:mt-[40px] flex flex-col gap-[24px] mt-[24px] ">
+
+                <input class="bg-[#FFFFFF0D] py-[22px] px-[70px] rounded-[4px] border border-[#FFFFFF33] text-[#ffff] pl-[20px]"  type="text" placeholder="Enter your mail...">
+                <button class=" btn py-[22px] px-[29px] bg-[#3DDEED] rounded-[4px]">Subscribe</button>
+
+              </div>
+
+           
+            </div>
+
+            
+         
+
+        </div>
+
+        <div class="container mb-[80px]">
+          <hr
+          class="mt-[61px] border-0 h-1 bg-gradient-to-r from-[#BD00FF00] via-[#BD00FF4D] to-[#BD00FF4D] "
+        />
+
+        <p class="text-center text-[#FFFFFFCC] mt-[32px] pb-[80px]">© 2023 Your Company Name. All rights reserved.</p>
+        </div>
+        
+       
+    </footer>
+
+
+
+    
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

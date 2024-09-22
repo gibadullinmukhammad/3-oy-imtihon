@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav__list__item {
+  transition: 1s;
+}
+
+.nav__list__item:hover {
+  color: #9e5c5c;
+}
+
+.hr {
+  border: 1px solid;
+
+  border-image-source: linear-gradient(
+    90deg,
+    rgba(189, 0, 255, 0) 0%,
+    rgba(189, 0, 255, 0.4) 48.78%,
+    rgba(189, 0, 255, 0.0132795) 99.99%,
+    rgba(189, 0, 255, 0) 100%
+  );
+}
+
+
+.hero{
+    background-image: url(./images/Isolation_Mode.png);
+}
+
+
+.bttn{
+  transition: 1s;
+}
+
+.bttn:hover{
+  background: #728bdd;
+}
+
+
+
+:root {
+  --container-desktop-width: 1120px;
+  --container-tablet-width: 864px;
+  --container-mobile-width: 100%;
+  overflow-x: hidden; 
+}
+
+
+
+.card {
+  @apply flex-none gap-[21px] w-[265px] desktop:w-[336px];
+}
+
+.wrapper::-webkit-scrollbar {
+  width: 0;
+}
+
+.card__carusel {
+  margin-left: 1rem;
+  width: calc(100vw - (100vw - var(--container-mobile-width)) / 2);
+}
+
+.container {
+  width: 100%;
+  min-width: 320px;
+  padding: 1rem;
+  margin: auto;
+}
+
+@media (min-width: 896px) {
+  .container {
+    padding: 0;
+    max-width: var(--container-tablet-width);
+  }
+  .card__carusel {
+    margin-left: calc((100vw - var(--container-tablet-width)) / 2);
+    width: calc(100vw - (100vw - var(--container-tablet-width)) / 2);
+  }
+}
+
+@media (min-width: 1152px) {
+  .container {
+    max-width: var(--container-desktop-width);
+  }
+
+  .card__carusel {
+    margin-left: calc((100vw - var(--container-desktop-width)) / 2);
+    width: calc(100vw - (100vw - var(--container-desktop-width)) / 2);
+  }
+}
+
+/* ---------------- */
+body {
+  height: 200vh;
+}
+
+
